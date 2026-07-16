@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Antonio Jeffrey — Creative Technologist & AI Engineer</title>
+  <meta name="description"
+    content="Cinematic scrolling portfolio of Antonio Jeffrey, a multidisciplinary creative technologist building intelligent software, immersive experiences, and digital products.">
+
+  <!-- Preload Font Family -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;700&display=swap"
+    rel="stylesheet">
+
+  <!-- Core Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <!-- Custom Cursor Elements -->
+  <div class="custom-cursor" id="custom-cursor" aria-hidden="true"></div>
+  <div class="custom-cursor-glow" id="custom-cursor-glow" aria-hidden="true"></div>
+
+  <!-- Loading Screen -->
+  <div class="loader" id="loader" aria-live="polite" aria-label="Loading portfolio experience">
+    <div class="loader-content">
+      <div class="loader-brand">ANTONIO JEFFREY</div>
+      <div class="loader-progress" aria-hidden="true"><span id="loader-percentage">00</span>%</div>
+      <div class="loader-bar-bg">
+        <div class="loader-bar" id="loader-bar"></div>
+      </div>
+      <div class="loader-status">INITIALIZING SYSTEM...</div>
+    </div>
+  </div>
+
+  <!-- Global Animated Background -->
+  <div class="bg-wrapper" aria-hidden="true">
+    <div class="bg-grid-overlay"></div>
+    <div class="bg-noise"></div>
+    <div class="bg-glow bg-glow-pink"></div>
+    <div class="bg-glow bg-glow-blue"></div>
+  </div>
+
+  <!-- Navigation Header -->
+  <header class="header" role="banner">
+    <a href="#" class="brand" aria-label="Antonio Jeffrey Home">ANTONIO JEFFREY</a>
+    <button class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="main-nav"
+      aria-label="Toggle navigation menu">
+      <span class="nav-toggle-bar"></span>
+      <span class="nav-toggle-bar"></span>
+    </button>
+    <nav class="nav" id="main-nav" role="navigation" aria-label="Main Navigation">
+      <a href="#about" class="nav-link">About</a>
+      <a href="#skills" class="nav-link">Skills</a>
+      <a href="#projects" class="nav-link">Projects</a>
+      <a href="#creative" class="nav-link">Creative</a>
+      <a href="#timeline" class="nav-link">Timeline</a>
+      <a href="#services" class="nav-link">Services</a>
+      <a href="#contact" class="nav-link">Contact</a>
+    </nav>
+    <a href="#contact" class="nav-cta-btn magnetic-btn" aria-label="Connect with Antonio">Connect</a>
+  </header>
+
+  <main id="main-content" role="main">
+
+    <!-- Hero Section -->
+    <section class="hero-section" id="hero">
+      <div class="container hero-container">
+        <div class="hero-label">FOUNDER OF WANDERING ADVENTURES</div>
+        <h1 class="hero-title reveal-text">
+          <span>ANTONIO</span><br>
+          <span class="accent-text gradient-text">JEFFREY</span>
+        </h1>
+        <div class="hero-subtitle">
+          <p class="role-trigger">
+            Building intelligent software, immersive experiences, & <br>
+            <span class="role-wrapper"><span class="role-text" id="role-text">AI Engineer</span></span>
+          </p>
+        </div>
+        <div class="hero-indicator" aria-hidden="true">
+          <span class="indicator-line"></span>
+          <span class="indicator-text">SCROLL TO DISCOVER</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about-section" id="about">
+      <div class="container">
+        <div class="section-num">01 // ABOUT ME</div>
+        <h2 class="section-title">THE PHILOSOPHY</h2>
+
+        <div class="about-narrative" id="narrative-trigger">
+          <p class="reveal-words">
+            Genius by brain Billionaire of relationship Playboy of ideas Philanthropist of people
+          </p>
+        </div>
+
+        <div class="about-grid">
+          <div class="glass-card about-card">
+            <h3>The Philosophy</h3>
+            <p>Code is more than instructions; it's a medium for interactive expression. I focus on details that shape
+              how digital products feel, not just how they execute.</p>
+          </div>
+          <div class="glass-card about-card">
+            <h3>The Engine</h3>
+            <p>From fine-tuning embedded microcontrollers to structuring scalable full-stack pipelines and AI model
+              inference, engineering discipline drives my development cycle.</p>
+          </div>
+          <div class="glass-card about-card">
+            <h3>The Vision</h3>
+            <p>To craft products and virtual landscapes that leave a lasting imprint. Creating Wandering Adventures was
+              the spark, designing next-generation systems is the path forward.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills-section" id="skills">
+      <div class="container">
+        <div class="section-num">02 // CORE ENGINE</div>
+        <h2 class="section-title">SKILL ARCHITECTURE</h2>
+
+        <div class="skills-grid">
+          <!-- Skill Card 1 -->
+          <div class="glass-card skill-card hover-glow" data-glow-color="pink">
+            <div class="skill-icon">
+              <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+            </div>
+            <h3>Intelligent Software</h3>
+            <ul class="skill-list">
+              <li>AI Engineering & Agent Systems</li>
+              <li>Full Stack Architecture (Node.js, Python)</li>
+              <li>Neural Network Inference & PyTorch</li>
+              <li>Distributed Cloud APIs & Database Systems</li>
+              <li>TypeScript, ES6+, WebSockets</li>
+            </ul>
+          </div>
+
+          <!-- Skill Card 2 -->
+          <div class="glass-card skill-card hover-glow" data-glow-color="blue">
+            <div class="skill-icon">
+              <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.5">
+                <rect x="2" y="2" width="20" height="20" rx="2.18" ry="2.18" stroke-linecap="round"
+                  stroke-linejoin="round" />
+                <path d="M7 2v20M17 2v20M2 12h20M2 7h20M2 17h20" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </div>
+            <h3>Immersive Experiences</h3>
+            <ul class="skill-list">
+              <li>Game Engines & Mechanics (Unity, C#)</li>
+              <li>WebGL, Canvas & Shader Coding (GLSL)</li>
+              <li>Interactive UX & Motion Design</li>
+              <li>Cinema 4D, After Effects & Motion Graphics</li>
+              <li>Video Post-production & Audio Spatialization</li>
+            </ul>
+          </div>
+
+          <!-- Skill Card 3 -->
+          <div class="glass-card skill-card hover-glow" data-glow-color="pink">
+            <div class="skill-icon">
+              <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.5">
+                <rect x="4" y="4" width="16" height="16" rx="2" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M9 9h6v6H9zM9 1v3M15 1v3M9 20v3M15 20v3M20 9h3M20 15h3M1 9h3M1 15h3" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+            </div>
+            <h3>Cyberphysical & Kernel</h3>
+            <ul class="skill-list">
+              <li>Linux Kernel Customization & Shell Scripting</li>
+              <li>Embedded Systems (C/C++, Assembly)</li>
+              <li>IoT Hardware Node Architecture</li>
+              <li>Real-Time Operating Systems (RTOS)</li>
+              <li>Physical Sensor Network Arrays</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Projects (Horizontal Scroll Pin) -->
+    <section class="projects-section" id="projects">
+      <div class="projects-sticky-pin">
+        <div class="projects-horizontal-scroll" id="projects-slider">
+
+          <!-- Slide 0: Intro Slide -->
+          <div class="project-slide project-intro">
+            <div class="project-intro-content">
+              <div class="section-num">03 // SELECTED ARCHIVES</div>
+              <h2 class="project-intro-title">FEATURED<br><span class="gradient-text">WORKS</span></h2>
+              <p> </p>
+              <div class="swipe-hint" aria-hidden="true">
+                <span class="hint-arrow">→</span> SCROLL DOWN TO SLIDE
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 1: Wandering Adventures -->
+          <div class="project-slide">
+            <div class="project-container">
+              <div class="project-info">
+                <span class="project-index">01 / GRAPHIC</span>
+                <h3>GAMES</h3>
+                <p class="project-desc">Working on several games.</p>
+                <div class="project-meta">
+
+                </div>
+              </div>
+              <div class="project-visual-frame">
+                <div class="project-visual-reveal">
+                  <img src="assets/images/wandering_adventures.png"
+                    alt="Wandering Adventures custom engine layout visual" loading="lazy" class="project-image">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 2: Cognitive Net -->
+          <div class="project-slide">
+            <div class="project-container">
+              <div class="project-info">
+                <span class="project-index">02 / AI</span>
+                <h3>MAYA</h3>
+                <p class="project-desc">MAYA is a desktop AI assistant that combines natural conversations, voice
+                  interaction, and smart automation into a seamless experience. Designed to feel intuitive and
+                  interactive, it helps users communicate, automate tasks, and interact with their computer in a more
+                  natural way.
+                </p>
+                <div class="project-meta">
+                  <span class="meta-tag">PyTorch</span>
+                  <span class="meta-tag">RAG</span>
+                  <span class="meta-tag">LLM</span>
+                  <span class="meta-tag">AUTOMATION</span>
+                </div>
+              </div>
+              <div class="project-visual-frame">
+                <div class="project-visual-reveal">
+                  <img src="assets/images/cognitive_net.png" alt="Cognitive Net autonomous controller map visual"
+                    loading="lazy" class="project-image">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 3: Voxel Engine -->
+          <div class="project-slide">
+            <div class="project-container">
+              <div class="project-info">
+                <span class="project-index">03 / NETWORK</span>
+                <h3>WECANN</h3>
+                <p class="project-desc">WeCann is a next-generation hosting platform that simplifies application
+                  deployment through secure, scalable, and distributed hosting solutions..</p>
+                <div class="project-meta">
+                  <span class="meta-tag">PostgreSQL</span>
+                  <span class="meta-tag">React</span>
+                  <span class="meta-tag">Python</span>
+                  <span class="meta-tag">Torrent (P2P)</span>
+                </div>
+              </div>
+              <div class="project-visual-frame">
+                <div class="project-visual-reveal">
+                  <img src="assets/images/voxel_engine.png" alt="Custom voxel renderer engine rendering frame"
+                    loading="lazy" class="project-image">
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Creative Works Grid -->
+    <section class="creative-section" id="creative">
+      <div class="container">
+        <div class="section-num">04 // SYNTHETIC LABS</div>
+        <h2 class="section-title">CREATIVE WORKSPACES</h2>
+
+        <div class="creative-grid">
+          <!-- Work Card 1 -->
+          <div class="glass-card creative-card reveal-card">
+            <div class="creative-img-wrapper">
+              <div class="abstract-graphic-1"></div>
+            </div>
+            <div class="creative-info">
+              <span class="creative-cat">MOTION GRAPHICS</span>
+              <h4>Procedural Flow States</h4>
+              <p>Dynamic kinetic design loops rendered using SVG morphing systems and post-production shader overlays.
+              </p>
+            </div>
+          </div>
+
+          <!-- Work Card 2 -->
+          <div class="glass-card creative-card reveal-card">
+            <div class="creative-img-wrapper">
+              <div class="abstract-graphic-2"></div>
+            </div>
+            <div class="creative-info">
+              <span class="creative-cat">GAME MECHANICS</span>
+              <h4>Kinetic Controller Lab</h4>
+              <p>Experiencing physics-based interaction mechanics inside custom 2D & 3D browser-based canvas prototypes.
+              </p>
+            </div>
+          </div>
+
+          <!-- Work Card 3 -->
+          <div class="glass-card creative-card reveal-card">
+            <div class="creative-img-wrapper">
+              <div class="abstract-graphic-3"></div>
+            </div>
+            <div class="creative-info">
+              <span class="creative-cat">BRAND & SYSTEM DESIGN</span>
+              <h4>Minimal Brand Blueprints</h4>
+              <p>Formulating typography hierarchies and grid-driven brand models for premium technological entities.</p>
+            </div>
+          </div>
+
+          <!-- Work Card 4 -->
+          <div class="glass-card creative-card reveal-card">
+            <div class="creative-img-wrapper">
+              <div class="abstract-graphic-4"></div>
+            </div>
+            <div class="creative-info">
+              <span class="creative-cat">EXPERIMENTATION</span>
+              <h4>Spatial Audio Canvas</h4>
+              <p>An interactive audio-reactive UI that parses spatial audio tracks to generate abstract particle flows
+                on canvas.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience Timeline -->
+    <section class="timeline-section" id="timeline">
+      <div class="container">
+        <div class="section-num">05 // ARCHIVE RECORD</div>
+        <h2 class="section-title">THE CHRONOLOGY</h2>
+
+        <div class="timeline-container">
+          <!-- Glowing Progress SVG Path -->
+          <div class="timeline-line-container" aria-hidden="true">
+            <svg class="timeline-svg" viewBox="0 0 10 800" fill="none" preserveAspectRatio="none">
+              <path class="timeline-path-bg" d="M5 0 L5 800" stroke="rgba(255,255,255,0.05)" stroke-width="4"
+                stroke-linecap="round" />
+              <path class="timeline-path-active" d="M5 0 L5 800" stroke="url(#timeline-gradient)" stroke-width="4"
+                stroke-linecap="round" />
+              <defs>
+                <linearGradient id="timeline-gradient" x1="0" y1="0" x2="0" y2="1">
+                  <stop offset="0%" stop-color="#FF4FCB" />
+                  <stop offset="50%" stop-color="#4DA8FF" />
+                  <stop offset="100%" stop-color="#FF4FCB" />
+                </linearGradient>
+              </defs>
+            </svg>
+          </div>
+
+          <!-- Timeline items -->
+          <div class="timeline-item left-item">
+            <div class="timeline-dot"></div>
+            <div class="glass-card timeline-card">
+              <div class="timeline-date">2018</div>
+              <h4>Initiated Wandering Adventuers</h4>
+              <p>Made he high level vision of creating something big.</p>
+            </div>
+          </div>
+
+          <div class="timeline-item right-item">
+            <div class="timeline-dot"></div>
+            <div class="glass-card timeline-card">
+              <div class="timeline-date">2020</div>
+              <h4>Creative Developer & Interactive UI</h4>
+              <p>Developed dynamic graphic engines using HTML5 canvas, WebGL shaders, and high-fidelity GSAP animations
+                for design-forward agencies.</p>
+            </div>
+          </div>
+
+          <div class="timeline-item left-item">
+            <div class="timeline-dot"></div>
+            <div class="glass-card timeline-card">
+              <div class="timeline-date">2023</div>
+              <h4>Video Game Design</h4>
+              <p>Begun the video game production</p>
+            </div>
+          </div>
+
+          <div class="timeline-item right-item">
+            <div class="timeline-dot"></div>
+            <div class="glass-card timeline-card">
+              <div class="timeline-date">2025</div>
+              <h4>Full-Stack Architect & AI Engineer</h4>
+              <p>Engineered core server structures, scaled Node.js web applications, and integrated LLM pipelines into
+                interactive systems.</p>
+            </div>
+          </div>
+
+          <div class="timeline-item left-item">
+            <div class="timeline-dot"></div>
+            <div class="glass-card timeline-card">
+              <div class="timeline-date">2026 - Present</div>
+              <h4>Deployment</h4>
+              <p>Deploy parts of startups.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services-section" id="services">
+      <div class="container">
+        <div class="section-num">06 // OFFERINGS</div>
+        <h2 class="section-title">CAPABILITIES</h2>
+
+        <div class="services-grid">
+          <!-- Service Card 1 -->
+          <div class="glass-card service-card">
+            <div class="service-icon">
+              <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <circle cx="12" cy="12" r="10" />
+                <path
+                  d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10zM2 12h20" />
+              </svg>
+            </div>
+            <h4>AI & System Intelligence</h4>
+            <p>Integrating autonomous AI agents, fine-tuning lightweight models, and deploying custom inference
+              solutions inside active software nodes.</p>
+          </div>
+
+          <!-- Service Card 2 -->
+          <div class="glass-card service-card">
+            <div class="service-icon">
+              <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <rect x="2" y="3" width="20" height="14" rx="2" ry="2" />
+                <path d="M8 21h8M12 17v4" />
+              </svg>
+            </div>
+            <h4>Full-Stack Architecture</h4>
+            <p>Designing secure backend systems, high-throughput database layers, and responsive web applications built
+              with TypeScript, Node.js, and Python.</p>
+          </div>
+
+          <!-- Service Card 3 -->
+          <div class="glass-card service-card">
+            <div class="service-icon">
+              <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path
+                  d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z" />
+                <path d="M3.27 6.96L12 12.01l8.73-5.05M12 22.08V12" />
+              </svg>
+            </div>
+            <h4>Immersive WebGL & Design</h4>
+            <p>Building high-end interactive websites, canvas graphics, and custom WebGL engines optimized for silky
+              smooth scroll behaviors.</p>
+          </div>
+
+          <!-- Service Card 4 -->
+          <div class="glass-card service-card">
+            <div class="service-icon">
+              <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9M13.73 21a2 2 0 0 1-3.46 0" />
+              </svg>
+            </div>
+            <h4>IoT & Embedded Systems</h4>
+            <p>Crafting firmware for connected microcontroller systems, parsing real-time sensor streams, and building
+              robust hardware nodes.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section" id="contact">
+      <div class="container contact-container">
+        <div class="contact-header">
+          <div class="section-num">07 // SYSTEM INGEST</div>
+          <h2 class="contact-title">INITIATE<br><span class="gradient-text">COMMUNICATION</span></h2>
+          <p class="contact-subtitle">Let's discuss project architectures, creative collaborations, or custom hardware
+            system designs.</p>
+
+          <div class="contact-info-block">
+            <div class="info-row">
+              <span class="info-label">EMAIL:</span>
+              <a href="mailto:aantoniojeffrey@gmail.com" class="info-value hover-underline">aantoniojeffrey@gmail.com</a>
+            </div>
+            <div class="info-row">
+              <span class="info-label">LOCATION:</span>
+              <span class="info-value">Coimbatore, TN</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="glass-card contact-form-card">
+          <form class="contact-form" id="contact-form" novalidate>
+            <div class="form-group">
+              <input type="text" id="name" name="name" class="form-input" required placeholder=" ">
+              <label for="name" class="form-label">Your Name</label>
+              <span class="form-line"></span>
+              <span class="error-msg" id="name-error">Please provide your name.</span>
+            </div>
+
+            <div class="form-group">
+              <input type="email" id="email" name="email" class="form-input" required placeholder=" ">
+              <label for="email" class="form-label">Your Email</label>
+              <span class="form-line"></span>
+              <span class="error-msg" id="email-error">Please enter a valid email address.</span>
+            </div>
+
+            <div class="form-group">
+              <textarea id="message" name="message" class="form-input" required rows="4" placeholder=" "></textarea>
+              <label for="message" class="form-label">Project Details / Message</label>
+              <span class="form-line"></span>
+              <span class="error-msg" id="message-error">Please type your message details.</span>
+            </div>
+
+            <button type="submit" class="submit-btn magnetic-btn" id="submit-btn">
+              <span class="btn-text">TRANSMIT REQUEST</span>
+              <span class="btn-glow"></span>
+            </button>
+            <div class="form-feedback" id="form-feedback" aria-live="polite"></div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer" role="contentinfo">
+    <div class="container footer-container">
+      <div class="footer-left">
+        <div class="footer-logo">ANTONIO JEFFREY</div>
+        <p class="footer-tagline">Blending logic and digital aesthetics.</p>
+        <div class="system-time" id="system-time">
+          SYSTEM CLOCK: <span id="clock-display">00:00:00 UTC</span>
+        </div>
+      </div>
+
+      <div class="footer-links">
+        <div class="footer-links-group">
+          <h5>NAVIGATION</h5>
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#creative">Creative</a>
+        </div>
+        <div class="footer-links-group">
+          <h5>SOCIAL CHANNELS</h5>
+          <a href="https://github.com/georgecpwajeff-stack" target="_blank" rel="noopener noreferrer" class="hover-underline">GitHub</a>
+          <a href="https://www.linkedin.com/in/antonio-jeffrey-cpwa?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noopener noreferrer" class="hover-underline">LinkedIn</a>
+          <a href="https://www.instagram.com/jeffreyy.zx?igsh=bmRmMzFtb3Fxbjhn" target="_blank" rel="noopener noreferrer" class="hover-underline">Instagram</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom container">
+      <p>&copy; 2026 ANTONIO JEFFREY. ALL RIGHTS RESERVED. CODEBASE SPECIFICATION V3.0</p>
+      <p>CRAFTED WITH GSAP, SCROLLTRIGGER, AND LENIS</p>
+    </div>
+  </footer>
+
+  <!-- External Animations Core -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+
+  <!-- Lenis Smooth Scroll -->
+  <script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
+
+  <!-- Project Logic & Script Inits -->
+  <script src="js/main.js"></script>
+  <script src="js/animations.js"></script>
+</body>
+
+</html>
